@@ -1,0 +1,77 @@
+🏠 Página Inicial
+
+Destaque para itens em destaque ou ofertas mágicas.
+
+Uma imagem de capa com uma loja mágica (estilo taberna, torre de mago, mercado de rua medieval).
+
+Frases cativantes tipo “Descubra artefatos esquecidos” ou “Equipamento lendário à sua disposição”.
+
+🛒 Loja de Itens
+
+Filtros por categoria:
+
+Armas mágicas
+
+Armaduras encantadas
+
+Pergaminhos e grimórios
+
+Poções e consumíveis
+
+Relíquias raras
+
+Filtro por raridade (comuns, incomuns, raras, lendárias).
+
+Preço em "moedas de ouro" (com conversão se for em dinheiro real).
+
+📖 Catálogo Interativo / Grimório
+
+Cada item tem uma página com descrição temática, poderes, lore.
+
+Texto em estilo de RPG: “Forjada no coração de um vulcão adormecido, esta espada flamejante incendeia o ar ao seu redor...”
+
+📦 Carrinho / Comprar
+
+Carrinho mágico (uma bolsa extradimensional?).
+
+Checkout com um toque temático: "Invocar entrega", "Selo arcano de pagamento".
+
+🎲 Itens Aleatórios
+
+Gacha/loot box: você compra uma “Caixa Misteriosa” e ganha um item aleatório.
+
+“Bênção do destino” – rolagem de dado para decidir desconto ou brinde.
+
+🧙‍♂️ Sobre a Loja
+
+Lore da loja: “Fundada por um mago aposentado que cansou de aventuras...”
+
+Quem é o “vendedor”? Crie um personagem (ex: Mestre Thalim, gnomo artífice).
+
+📬 Contato / Suporte
+
+Nomeie como “Envie uma mensagem por corvo” ou “Use o Espelho Comunicador”.
+
+🌒 Tema Noturno / Modo Épico
+
+Design escuro, roxo, dourado, rúnico, com fontes estilo manuscrito medieval.
+
+🎨 Estilo Visual
+Fontes medievais (ex: Cinzel, IM Fell English).
+
+Ícones mágicos (poções, runas, pergaminhos).
+
+Fundo com pergaminhos, couro, madeira, pedras encantadas.
+
+Animações leves: brilhos nos itens, partículas mágicas.
+
+🛠️ Funcionalidades Futuras
+Sistema de conta e inventário do usuário.
+
+Criação de “personagem” do comprador.
+
+Integração com mesa virtual (ex: Foundry, Roll20).
+
+Loja física ou versão printável (para usar em mesa real).
+
+Se quiser, posso montar um esqueleto visual no Figma ou começar o HTML/CSS do site pra você. Quer seguir por esse caminho?
