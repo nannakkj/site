@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Cormorant+SC:wght@300;400;500;600;700&family=Underdog&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Underdog&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    min-height: 100vh;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.container{ 
+    /*isso serve para um padrao de sempre que eu for criar algo eu nao precisar colocar isso, por isso tem de ser em classe e os "quadrados em id", assim deixando chances de erro mais baixar e meus codigos MUITO menores*/
+    /* por base ja deixam o conteudo centralizado.*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+
+/* espacos */
+/* custumo deixar tudo do site dentro de espacos, assim deixando a organizacao mais facil*/
+
+#space1 { 
+    height: auto;
+    width: 100vw;
+    margin-left: -40px;
+    margin-right: -40px; 
+    position: relative;
+    z-index: 3;
+}
+
+#space2 { 
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#space3 { 
+    height: 17px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(2, 11, 5);
+    z-index: 11;
+}
+
+
+
+/*conteudo*/
+#counteudo1 { 
+    height: 300px;
+    width: 800px;
+    position: relative;
+    background-color: #64178d;
+}
+/* textos */
+
+#titulo1 {
+    color: #EFBF04;
+    font-family: 'Underdog', serif;
+    font-size: 50px;
+    font-weight: 300px;
+    top: 300px;
+    position: absolute;
+    text-shadow: /* sombra pra dar o efeito de contorno */
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    -3px -3px 0 #000,
+    3px -3px 0 #000;
+    cursor: default; /* deixar o mouse igual, nao mudar o ponteiro */
+    z-index: 4;
+}
+
+#titulo1 h4{
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+/* extras texto */
+
+#titulo1a{
+    transition: color 0.4s ease, text-shadow .8s ease; /* animacao da cor e da sombra */
+}
+
+
+#titulo1tiny{
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+#titulo1a:hover{
+    color: #64178d;
+            text-shadow: /* sombra complicada */
+    3px 3px 0 #cc87f46a,
+    3px 3px 0 #cc87f46a,
+    3px -3px 0 #cc87f46a,
+    1px -3px 0 #cc87f46a,
+    3px -3px 0 #cd61d5b1,
+    -6px 6px 0 #cd61d5b1,
+    9px -9px 0 #cd61d5b1,
+    -12px 12px 0 #cd61d5b1;
+}
+
+#titulo1tiny:hover{
+    color: #cd61d5;
+            text-shadow:
+    6px -6px 0 #64178d8d,
+    -9px 9px 0 #64178d8d,
+    12px -12px 0 #64178d8d,
+    -15px 15px 0 #64178d8d,
+    3px -3px 0 #64178d8d,
+    -6px 6px 0 #64178d8d,
+    9px -9px 0 #64178d8d,
+    -12px 12px 0 #64178d8d;
+}
+/* img */
+
+#space1 img{ 
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#wall{ 
+    width: 100vw;
+    z-index: -1;
+    margin-left: -40px;
+    margin-right: -39px; 
+    filter: brightness(.4);
+}
+
+#portao, #portao2 {
+    width: 480px;
+    position: absolute;
+    bottom: 4px;
+    transform: translate(-50%);
+    margin-left: -40px;
+    margin-right: -40px; 
+    height: auto;
+    left: 50%;
+    pointer-events: auto; /* permitir hover apenas nestas */
+    cursor:pointer ;
+    filter: brightness(.8);
+}
+#portao { 
+    z-index: 4;
+}
+
+#portao2 { 
+    z-index: -1;
+    transition: bottom 1.5s ease-out;
+}
+
+#portao-container:hover #portao2 {
+    bottom: 500px;
+    cursor: grab;
+}
+
+#portao_fundo { 
+    width: 400px;
+    height: 501px;
+    background-color: #000000;
+    top: 1550px;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -40px;
+    margin-right: -40px; 
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+
+
+img { /* nao deixar selecionavel a imagem */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#fundodun{
+    height: 500px;
+    position: absolute;
+    bottom: 4px;
+    transform: translate(-50%);
+    margin-left: -40px;
+    margin-right: -40px; 
+    left: 50%;
+    pointer-events: auto; /* permitir hover apenas nestas */
+    cursor:pointer ;
+    z-index: -2;
+    filter: brightness(.25);
+}
+
+#dragon1, #dragon2{
+    position: absolute;
+    z-index: 99;
+    right: -250px;
+    top: 1140px;
+    filter: brightness(.7);
+}
+
+#dragon2{
+    position: absolute;
+    z-index: 99;
+    left: -240px;
+    top: 1140px;
+    transform: rotateY(180deg);}
+
+/* aniamcao */
+
+
+/* especiais */
+
+::selection { /* me permite mudar quando a gente ta selecionando, aquele quadrado azul que fica*/
+    background-color: #EFBF04;
+    color: black;
+    text-shadow:
+    3px 3px 0 #EFBF04,
+    -3px 3px 0 #EFBF04,
+    -3px -3px 0 #EFBF04,
+    3px -3px 0 #EFBF04;
+}
+
+::-webkit-scrollbar {
+    display:none; /* tirar a aba de scroll */
+}
