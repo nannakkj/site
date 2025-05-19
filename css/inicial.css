@@ -10,10 +10,10 @@
 }
 
 body {
-    background: #000000;
+    background: rgb(2, 11, 5);
     min-height: 100vh;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -35,8 +35,8 @@ body {
 #space1 { 
     height: auto;
     width: 100vw;
-    margin-left: -40px;
-    margin-right: -40px; 
+    margin-left: -2vw;
+    margin-right: -2vw; 
     position: relative;
     z-index: 3;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 #space3 { 
-    height: 17px;
+    height: 1vw;
     width: 100%;
     position: relative;
     background-color: rgb(2, 11, 5);
@@ -59,8 +59,8 @@ body {
 
 /*conteudo*/
 #counteudo1 { 
-    height: 300px;
-    width: 800px;
+    height: 30vw;
+    width: 1vw ;
     position: relative;
     background-color: #64178d;
 }
@@ -69,22 +69,27 @@ body {
 #titulo1 {
     color: #EFBF04;
     font-family: 'Underdog', serif;
-    font-size: 50px;
-    font-weight: 300px;
-    top: 300px;
+    font-size: 3vw;
+    font-weight: 30vw;
+    top: 22vw;
     position: absolute;
     text-shadow: /* sombra pra dar o efeito de contorno */
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    -3px -3px 0 #000,
-    3px -3px 0 #000;
+    0.3vw 0.3vw 0 #000,
+    -0.3vw 0.3vw 0 #000,
+    -0.3vw -0.3vw 0 #000,
+    0.3vw -0.3vw 0 #000;
     cursor: default; /* deixar o mouse igual, nao mudar o ponteiro */
     z-index: 4;
 }
 
 #titulo1 h4{
-    margin-left: 100px;
-    font-size: 35px;
+    margin-left: 6vw;
+    font-size: 2.1vw;
+    text-shadow: /* sombra pra dar o efeito de contorno */
+    0.2vw 0.2vw 0 #000,
+    -0.2vw 0.2vw 0 #000,
+    -0.2vw -0.2vw 0 #000,
+    0.2vw -0.2vw 0 #000;
 }
 
 /* extras texto */
@@ -99,29 +104,49 @@ body {
 }
 
 #titulo1a:hover{
-    color: #64178d;
+    color: #f9a8ff;
             text-shadow: /* sombra complicada */
-    3px 3px 0 #cc87f46a,
-    3px 3px 0 #cc87f46a,
-    3px -3px 0 #cc87f46a,
-    1px -3px 0 #cc87f46a,
-    3px -3px 0 #cd61d5b1,
-    -6px 6px 0 #cd61d5b1,
-    9px -9px 0 #cd61d5b1,
-    -12px 12px 0 #cd61d5b1;
+    -.6vw .6vw 0 #a10fefbf,
+    .9vw -.9vw 0 #a10fefbf,
+    .2vw .2vw 0 #df1fa6bf,
+    .2vw .2vw 0 #df1fa6bf,
+    .2vw -.2vw 0 #df1fa6bf,
+    .1vw -.2vw 0 #df1fa6bf,
+    .2vw -.2vw 0 #a10fefbf,
+    -.12vw .12vw 0 #a10fefbf;
 }
 
 #titulo1tiny:hover{
-    color: #cd61d5;
+    color: #f9a8ff;
             text-shadow:
-    6px -6px 0 #64178d8d,
-    -9px 9px 0 #64178d8d,
-    12px -12px 0 #64178d8d,
-    -15px 15px 0 #64178d8d,
-    3px -3px 0 #64178d8d,
-    -6px 6px 0 #64178d8d,
-    9px -9px 0 #64178d8d,
-    -12px 12px 0 #64178d8d;
+    .6vw -.6vw 0 #951dd6bf,
+    -.9vw .9vw 0 #64178dbf,
+    .12vw -.12vw 0 #853dacbf,
+    -.15vw .15vw 0 #420463bf,
+    .3vw -.3vw 0 #a10fefbf,
+    -.6vw .6vw 0 #a50aa2bf,
+    .9vw -.9vw 0 #df1fa6bf,
+    -.3vw .3vw 0 #a10fefbf,
+    -.6vw .6vw 0 #a50aa2bf,
+    .9vw -.9vw 0 #df1fa6bf,
+    -.9vw -.9vw 0 #df1fa6bf,
+    -.6vw -.6vw 0 #951dd6bf,
+    -.9vw -.9vw 0 #64178dbf,
+    -.12vw -.12vw 0 #853dacbf,
+    -.15vw -.15vw 0 #420463bf,
+    -.3vw -.3vw 0 #a10fefbf,
+    -.6vw -.6vw 0 #a50aa2bf,
+    -.9vw -.9vw 0 #df1fa6bf,
+    -.3vw -.3vw 0 #a10fefbf,
+    -.6vw .6vw 0 #a50aa2bf,
+    -.9vw -.9vw 0 #df1fa6bf,
+    -.9vw -.9vw 0 #df1fa6bf,
+    -.3vw .3vw 0 #a10fefbf,
+    -.6vw .10vw 0 #a50aa2bf,
+    -.9vw .11vw 0 #df1fa6bf,
+    -.9vw .9vw 0 #df1fa6bf,
+    -.12vw -.12vw 0 #64178dbf;
+    
 }
 /* img */
 
@@ -134,18 +159,18 @@ body {
 #wall{ 
     width: 100vw;
     z-index: -1;
-    margin-left: -40px;
-    margin-right: -39px; 
+    margin-left: -2vw;
+    margin-right: -2vw; 
     filter: brightness(.4);
 }
 
 #portao, #portao2 {
-    width: 480px;
+    width: 26vw;
     position: absolute;
-    bottom: 4px;
+    bottom: .4vw;
     transform: translate(-50%);
-    margin-left: -40px;
-    margin-right: -40px; 
+    margin-left: -2vw;
+    margin-right: -2vw; 
     height: auto;
     left: 50%;
     pointer-events: auto; /* permitir hover apenas nestas */
@@ -162,23 +187,23 @@ body {
 }
 
 #portao-container:hover #portao2 {
-    bottom: 500px;
+    bottom: 25vw;
     cursor: grab;
 }
 
 #portao_fundo { 
-    width: 400px;
-    height: 501px;
+    width: 45vw;
+    height: 50vw;
     background-color: #000000;
-    top: 1550px;
+    top: 155vw;
     position: absolute;
     z-index: 3;
     left: 50%;
     transform: translate(-50%);
-    margin-left: -40px;
-    margin-right: -40px; 
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
+    margin-left: -2vw;
+    margin-right: -2vw; 
+    border-top-left-radius: 20vw;
+    border-top-right-radius: 20vw;
 
 }
 
@@ -192,12 +217,12 @@ img { /* nao deixar selecionavel a imagem */
 }
 
 #fundodun{
-    height: 500px;
+    height: 20vw;
     position: absolute;
-    bottom: 4px;
+    bottom: .7vw;
     transform: translate(-50%);
-    margin-left: -40px;
-    margin-right: -40px; 
+    margin-left: -2vw;
+    margin-right: -2vw; 
     left: 50%;
     pointer-events: auto; /* permitir hover apenas nestas */
     cursor:pointer ;
@@ -208,16 +233,15 @@ img { /* nao deixar selecionavel a imagem */
 #dragon1, #dragon2{
     position: absolute;
     z-index: 99;
-    right: -250px;
-    top: 1140px;
+    right: -13vw;
+    top: 63.3vw;
     filter: brightness(.7);
+    height: 11vw;
 }
 
 #dragon2{
     position: absolute;
-    z-index: 99;
-    left: -240px;
-    top: 1140px;
+    left: -13vw;
     transform: rotateY(180deg);}
 
 /* aniamcao */
@@ -229,10 +253,10 @@ img { /* nao deixar selecionavel a imagem */
     background-color: #EFBF04;
     color: black;
     text-shadow:
-    3px 3px 0 #EFBF04,
-    -3px 3px 0 #EFBF04,
-    -3px -3px 0 #EFBF04,
-    3px -3px 0 #EFBF04;
+    .3vw .3vw 0 #EFBF04,
+    -.3vw .3vw 0 #EFBF04,
+    -.3vw -.3vw 0 #EFBF04,
+    .3vw -.3vw 0 #EFBF04;
 }
 
 ::-webkit-scrollbar {
