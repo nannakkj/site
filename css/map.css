@@ -18,7 +18,7 @@ body {
     margin-left: 40px;
     margin-right: 40px;
     background-attachment: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-top: 40px;
 }
 
@@ -51,6 +51,12 @@ display: grid;
 grid-template-columns: repeat(5, 40px);
 grid-auto-rows: 40px;
 }
+
+.map_10{
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-auto-rows: 40px;
+  }
 
 
 
@@ -185,4 +191,10 @@ background: none;
     position: absolute;
     top: 120px;
     left: 280px;
+}
+
+#caixa2 {
+  position: absolute;
+  bottom: 40px;
+  left: 700px;
 }
