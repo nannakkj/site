@@ -1,8 +1,8 @@
 :root {
-    --branco: rgb(186, 175, 148);
-    --parede: rgb(30, 0, 0);
+    --branco: rgb(225, 215, 192);
+    --parede: rgb(144, 57, 57);
     --porta: rgb(100, 41, 20);
-    --sombra: rgba(0, 0, 0, 0.537);
+    --sombra: rgba(115, 57, 6, 0.421);
 }
 
 

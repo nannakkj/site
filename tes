@@ -1,0 +1,258 @@
+
+<div class="map_4">
+
+        <!-- linha 1-->
+    <div class="space top left topS"></div>
+    <div class="space top "></div>
+    <div class="space top "></div>
+    <div class="space top right"></div>
+        <!-- linha 2-->
+    <div class="space left"></div>
+    <div class="space "></div>
+    <div class="space "></div>
+    <div class="space right"></div>
+        <!-- linha 3-->
+    <div class="space left"></div>
+    <div class="space "></div>
+    <div class="space "></div>
+    <div class="space right"></div>
+        <!-- linha 4-->
+    <div class="space left"></div>
+    <div class="space "></div>
+    <div class="space "></div>
+    <div class="space rightC"></div>
+        <!-- linha 5-->
+    <div class="space left"></div>
+    <div class="space "></div>
+    <div class="space "></div>
+    <div class="space right"></div>
+
+        <!-- linha 6-->
+    <div class="space left"></div>
+    <div class="space "></div>
+    <div class="space "></div>
+    <div class="space right"></div>
+
+        <!-- linha 7-->
+    <div class="space bottom left"></div>
+    <div class="space bottom"></div>
+    <div class="space bottom"></div>
+    <div class="space bottom right"></div>
+</div>
+
+<div class="map_2" id="corredor1">
+
+        <!-- linha -3-->
+    <div class="space_vazio "></div>
+    <div class="space_vazio "></div>
+
+        <!-- linha -2-->
+    <div class="space_vazio "></div>
+    <div class="space_vazio "></div>
+
+        <!-- linha -1-->
+    <div class="space_vazio bottom "></div>
+    <div class="space_vazio bottom "></div>
+
+        <!-- linha 1-->
+    <div class="space " id="topC"></div>
+    <div class="space" id="topC"></div>
+
+        <!-- linha -3-->
+    <div class="space_vazio top "></div>
+    <div class="space_vazio top "></div>
+
+        <!-- linha -2-->
+    <div class="space_vazio "></div>
+    <div class="space_vazio "></div>
+
+        <!-- linha -1-->
+    <div class="space_vazio "></div>
+    <div class="space_vazio "></div>
+</div>
+
+<div class="map_3" id="caixa1">
+
+        <!-- linha 1-->
+    <div class="space top left topS"></div>
+    <div class="space top "></div>
+    <div class="space top right"></div>
+
+        <!-- linha 2-->
+    <div class="space leftC" id="leftC"></div>
+    <div class="space "></div>
+    <div class="space right"></div>
+
+        <!-- linha 3-->
+    <div class="space bottom left"></div>
+    <div class="space "></div>
+    <div class="space bottom right"></div>
+
+</div>
+
+<div class="map_3" id="corredor2">
+
+        <!-- linha 1-->
+    <div class="space_vazio right"></div>
+    <div class="space topC" id="tleftC"></div>
+    <div class="space_vazio left"></div>
+        <!-- linha 2-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+        <!-- linha 3-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+</div>
+
+
+<div class="map_4" id="corredor2_5">
+
+        <!-- linha -3-->
+    <div class="space_vazio right" ></div>
+    <div class="space bottom" id="leftC"></div>
+    <div class="space bottom top"></div>
+    <div class="space bottom top"></div>
+</div>
+
+<div class="map_3" id="corredor3">
+        <!-- linha 1-->
+    <div class="space_vazio right"></div>
+    <div class="space top" id="leftC"></div>
+    <div class="space_vazio left"></div>
+        <!-- linha 2-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+        <!-- linha 3-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 4-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 5-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 6-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 7-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 8-->
+    <div class="space_vazio "></div>
+    <div class="space leftC2" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 9-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 10-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 11-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 12-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 13-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+                <!-- linha 14-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 15-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 16-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 17-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 18-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 19-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+            <!-- linha 20-->
+    <div class="space_vazio right"></div>
+    <div class="space" id="leftC"></div>
+    <div class="space_vazio left"></div>
+</div>
+
+<div class="map_10" id="caixa2">
+
+    <div class="space left top"></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top" ></div>
+    <div class="space top right" ></div>
+
+    <div class="space left " ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space right"></div>
+
+    <div class="space left " ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space right"></div>
+
+    <div class="space left " ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space" ></div>
+    <div class="space right"></div>
+
+    <div class="space left bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space bottom" ></div>
+    <div class="space right bottom"></div>
+</div>
