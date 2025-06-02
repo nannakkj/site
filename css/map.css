@@ -13,7 +13,11 @@
 }
 
 body {
-    background: #313131;
+    background: #fff;
+    background-image:  
+    linear-gradient(0deg, rgb(105, 1, 1) 0.1vh, transparent 0.1vh),
+    linear-gradient(90deg, rgb(105, 1, 1) 0.1vh, transparent 0.1vh);
+    background-size: 40px 40px;
     min-height: 100vh;
     margin-left: 40px;
     margin-right: 40px;
