@@ -47,10 +47,20 @@ body {
     box-shadow: inset 16px 2px 8px -5px var(--sombra);
     border-top: none;
 }
+
+.corredortopbtless{
+    border: var(--linha) solid var(--parede);
+    box-shadow: inset 16px 2px 8px -5px var(--sombra);
+    border-top: none;
+    border-bottom: none;
+}
+
 .corredorsideless{
     border: var(--linha) solid var(--parede);
     box-shadow: inset 0px 16px 8px -5px var(--sombra);
 }
+
+
 
 #circulo1{
     top: 40px;
@@ -63,7 +73,7 @@ body {
 }
 
 #quadradro1{
-    top: 40px;
+    top: 42px;
     left: 480px;
     width: 280px;
     height: 240px;
@@ -71,13 +81,85 @@ body {
     position: absolute;
     border-radius: 2vh;
 }
+#quadradro2{
+    top: 640px;
+    left: 480px;
+    width: 283px;
+    height: 203px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#quadradro2_1{
+    top: -3px;
+    left: 277px;
+    width: 243px;
+    height: 203px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#quadradro2_2{
+    top: -243px;
+    left: 277px;
+    width: 243px;
+    height: 243px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#quadradro3{
+    top: 243px;
+    left: 1407px;
+    width: 160px;
+    height: 400px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+}
 
 #corredor1{
-    top: 280px;
+    top: 282px;
     left: 600px;
     width: 43px;
     height: 360px;
     position: absolute;
+    background-position: -2.5px 0px;
+}
+#corredor1_1{
+    top: 0px;
+    left: 120px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-position: -2.5px 0px;
+}
+
+#corredor1_2{
+    top: 0px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-position: -2.5px 0px;
+}
+#corredor1_3{
+    top: 80px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-position: -2.5px 0px;
 }
 #corredor2_2{
     top: 160px;
@@ -100,7 +182,55 @@ body {
     background-color: '';
 }
 
-#corredor2_1::before {
+#corredor2_3{
+    top: 200px;
+    left: 40px;
+    width: 43px;
+    height: 563px;
+    position: absolute;
+    z-index: 2;
+    border: var(--linha) solid var(--parede);
+}
+
+#corredor2_4{
+    top: 720px;
+    left: 80px;
+    width: 403px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    border: var(--linha) solid var(--parede);
+}
+
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent; 
+    z-index: 0;
+    pointer-events: none; 
+    transition: backdrop-filter .4s ease, background-color .4s ease;
+}
+.blur.ativo {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.2);
+    z-index: 3;
+}
+#circulo1:hover #corredor2_1, 
+#circulo1:hover, 
+#quadradro1:hover, 
+#quadradro2:hover,
+#quadradro3:hover{
+    z-index: 4;
+}
+
+#corredor1_1::before, 
+#corredor2_1::before, 
+#corredor1_2::before, 
+#corredor1_3::before{
     content: '';
     position: absolute;
     left: 0; top: 0;
@@ -113,36 +243,6 @@ body {
     z-index: 2;
 }
 
-#corredor2_3{
-    top: 200px;
-    left: 40px;
-    width: 43px;
-    height: 603px;
-    position: absolute;
-    z-index: 2;
-    border: var(--linha) solid var(--parede);
-}
 
-.blur {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent; 
-    z-index: 0;
-    pointer-events: none; 
-    transition: backdrop-filter 0.6s ease, background-color 0.3s ease;
-}
-.blur.ativo {
-    backdrop-filter: blur(5px);
-    background-color: rgba(255,255,255,0.2);
-    z-index: 3;
-    
-}
-#circulo1:hover #corredor2_1, #circulo1:hover, #quadradro1:hover{
-    z-index: 4;
-}
-#circulo1:hover, #quadradro1:hover {    
-    top: 20px;
-}
+/* Hover e blabla */
+

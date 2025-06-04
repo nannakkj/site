@@ -14,55 +14,22 @@
 </div>
 <div class="container" id="quadradro1">
 </div>
-<div class="container corredortopless" id="corredor1"></div>
-<div class="container" id="corredor2_2"></div>
+<div class="container" id="quadradro2">
+  <div class="container shadowless" id="corredor1_1"></div>
+  <div class="container shadowless" id="corredor1_2"></div>
+  <div class="container shadowless" id="corredor1_3"></div>
+  <div class="container shadowless" id="quadradro2_1"></div>
+  <div class="container" id="quadradro2_2"></div>
+</div>
+<div class="container corredortopbtless" id="corredor1"></div>
+<div class="container " id="corredor2_2"></div>
 <div class="container corredortopless" id="corredor2_3"></div>
+<div class="container corredorsideless" id="corredor2_4"></div>
+<div class="container" id="quadradro3">
+</div>
 
 
 
-<script>
-const circulo = document.getElementById('circulo1') 
-const quad = document.getElementById('quadradro1');
-const blur = document.querySelector('.blur');
-let timeoutId = null;
-
-circulo.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
-
-circulo.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
-});
-
-quad.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
-
-quad.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
-});
-  </script>
+<script src="./java.js"></script>
 </body>
 </html>

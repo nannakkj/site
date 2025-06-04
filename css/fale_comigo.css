@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.folha{
+    display: flex;
+    max-width: 1200px;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 900px;
+    position: relative;
+    
+}
+.contato_cont{
+    margin: 0 auto;
+}
+
+.contato{
+    text-align: center;
+}
+
+.title1{
+    font-size: 35px;
+    position: relative;
+}
+
+.fomularios{
+
+}
+.map{
+    display:none;
+    position: absolute;
+}
+.map_icon{
+    height: 20px;
+    left: 0;
+    font-size: 30px;
+    color: blue;
+}
+
+.map_icon:hover .map{
+    display: block;
+}
