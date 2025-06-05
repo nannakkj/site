@@ -56,9 +56,12 @@ body{
 }
 .map_icon{
     height: 20px;
-    left: 0;
+    width: 20px;
+    left: 435px;
+    top: 0;
     font-size: 30px;
     color: var(--text1);
+    cursor: pointer;
 }
 
 .map.ativo{
@@ -67,7 +70,7 @@ body{
 }
 
 #esq{
-    left: -1250px;
+    left: -2350px;
     position: absolute;
     transform: rotateZ(-20deg);
     background-color: #e6e6e6;
@@ -89,7 +92,7 @@ body{
 
 
 #dir{
-    right: -400px;
+    right: 730px;
     position: absolute;
     transform: rotateZ(20deg);
     background-color: #e6e6e6;
@@ -97,7 +100,6 @@ body{
     width: 455px;
     box-shadow: -10px 10px 15px 5px rgba(2, 18, 49, 0.356);
     border: 1px solid black;
-    
 }
 
 #dir iframe{
@@ -118,7 +120,19 @@ body{
 }
 
 #text{
-    max-width: 680px;
+    min-width: 680px;
+    resize: none;
+    padding-top: 40px;
+    border-bottom: 1px solid var(--text1);
+    font-family: "Cinzel", serif;
+    color: var(--text1);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    text-align: center;
 }
 
 #nome,#email {
@@ -138,7 +152,7 @@ body{
 
 }
 
-#nome:focus,#email:focus {
+#nome:focus,#email:focus,#text:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     border-bottom: 1px solid var(--text1);
@@ -169,6 +183,37 @@ body{
     align-items: center;
 }
 
+.icon{
+    height: 60px;
+    width: 60px;
+    background-color: #E0C9A6;
+    box-shadow: .2px .3px 20px black, 0 0 60px #572f08 inset;
+    border-radius: 50%;
+    position: absolute;
+    left: 1135px;
+    top: 30px;
+    color: #E0C9A6;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    
+}
+
+#button{
+    top: 130px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: var(--text1);
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Cinzel", serif;
+    color: var(--text1);
+    font-size: larger;
+}
 @keyframes jogaesq{
     0%{
         transform: translateX(-1200px) rotate(-90deg);

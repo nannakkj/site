@@ -28,9 +28,9 @@
                             <textarea placeholder="Escreva seu texto" id="text" ></textarea>
                         </div>
                         <div>
-                            <input type="submit" name="enviar" value="Enviar" >
+                            <input type="submit" name="enviar" value="Enviar" id="button">
                         </div>
-                                                <div>
+                        <div>
                             <input placeholder="Assine" type="text" required id="nome">
                         </div>
                         <div>
@@ -38,7 +38,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="map_icon"><ion-icon name="map-outline"></ion-icon>
+                
+                <div class="map_icon icon"><ion-icon name="map-outline"></ion-icon>
+                    
                     <div class="map">
                         <div id="dir">
                         <iframe id="bordado"
@@ -53,8 +55,8 @@
                         </div>
                     </div>
 
-                </div>
-
+                
+            </div>
             </div>
 
         </div>
@@ -70,8 +72,14 @@
     const mapIcon = document.querySelector('.map_icon'); 
     const esq = document.getElementById('esq');
     const dir = document.getElementById('dir');
+    const textarea = document.getElementById('text');
     let ativoo = 0;
 
+    textarea.addEventListener('input', () => {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    });
+    
     mapIcon.addEventListener('click', function () {
         if (ativoo === 0) {
             map.classList.add('ativo');

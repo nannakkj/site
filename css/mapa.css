@@ -74,6 +74,18 @@ body {
     border-radius: 40%;
 }
 
+
+#circulo2{
+    top: 560px;
+    position: absolute;
+    left: 440px;
+    width: 120px;
+    height: 120px;
+    border: var(--linha) solid var(--parede);
+    border-radius: 40%;
+}
+
+
 #quadradro1{
     top: 42px;
     left: 760px;
@@ -121,10 +133,10 @@ body {
 }
 
 #quadradro3{
-    top: 243px;
-    left: 1407px;
-    width: 160px;
-    height: 400px;
+    top: 240px;
+    left: 1320px;
+    width: 240px;
+    height: 520px;
     border: var(--linha) solid var(--parede);
     position: absolute;
     border-radius: 2vh;
@@ -201,7 +213,28 @@ body {
     border: none;
     background-color: '';
 }
+#corredor_seinao{
+    top: 0px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    background-color: '';
+}
+#corredor_seinao2{
+    top: 520px;
+    left: 480px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    background-color: '';
+    border: var(--linha) solid var(--parede);
 
+}
 #corredor2_3{
     top: 200px;
     left: 40px;
@@ -240,6 +273,16 @@ body {
     z-index: 2;
 }
 
+
+#corredor3_1{
+    left: 1240px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 157px;
+}
+
 #corredor4{
     top: 520px;
     left: 200px;
@@ -250,6 +293,15 @@ body {
     border: var(--linha) solid var(--parede);
 }
 
+#corredor5{
+    top: 320px;
+    left: 920px;
+    width: 403px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    border: var(--linha) solid var(--parede);
+}
 
 
 .blur {
@@ -268,12 +320,13 @@ body {
     background-color: rgba(255,255,255,0.2);
     z-index: 3;
 }
-#circulo1:hover #corredor2_1, 
+#circulo2:hover, 
 #circulo1:hover, 
 #quadradro1:hover, 
 #quadradro2:hover,
 #quadradro3:hover,
-#quadradro4:hover{
+#quadradro4:hover
+#circulo1:hover{
     z-index: 0;
 }
 
@@ -281,8 +334,10 @@ body {
 #corredor2_1::before, 
 #corredor1_2::before, 
 #corredor1_3::before,
+#corredor3_2::before,
 #corredor3_1::before,
-#quadradro4_1::before{
+#quadradro4_1::before,
+#corredor_seinao::before{
     content: '';
     position: absolute;
     left: 0; top: 0;
@@ -355,4 +410,12 @@ body {
   }
 }
 
+#hoverido-quadradro3{
+    right: 130px;
+}
 
+#hoverido-circulo2{
+    left: 80px;
+    height: 200px;
+    width: 400px;
+}
