@@ -8,6 +8,8 @@
 body{
     display: flex;
     justify-content: center;
+        background: #2c2c2c;
+
 }
 
 .folha{
@@ -17,7 +19,10 @@ body{
     height: 100vh;
     width: 900px;
     position: relative;
-    
+    padding: 4em;
+    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    background: #E0C9A6;
+    filter: url(#wavy2);
 }
 .contato_cont{
     margin: 0 auto;
@@ -30,20 +35,23 @@ body{
 .title1{
     font-size: 35px;
     position: relative;
+    color: #8a613b;
+    font-style: italic;
+    left: -30px;
 }
 
 .map{
     display:none;
     position: absolute;
     right: 10px;
-    top: 220px;
+    top: 290px;
 
 }
 .map_icon{
     height: 20px;
     left: 0;
     font-size: 30px;
-    color: blue;
+    color: #b3865d;
 }
 
 .map.ativo{
