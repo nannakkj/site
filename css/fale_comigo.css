@@ -117,10 +117,11 @@ body{
 
 }
 
+#text{
+    max-width: 680px;
+}
 
-
-#nome {
-    right: 90px;
+#nome,#email {
     position: absolute;
     height: 40px;
     background-color: transparent;
@@ -132,15 +133,23 @@ body{
     font-style: italic;
     font-weight: 600;
     font-family: "Cinzel", serif;
-    color: red;
+    color: var(--text1);
     font-size: 17px;
+
 }
 
-#nome:focus {
+#nome:focus,#email:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     border-bottom: 1px solid var(--text1);
     outline: 0;
+}
+
+#email {
+    left: 90px;
+}
+#nome {
+    right: 90px;
 }
 
 .voltar{
