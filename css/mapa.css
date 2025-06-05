@@ -16,6 +16,7 @@
 }
 
 body {
+    transform: scale(1);
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -25,6 +26,7 @@ body {
     background-attachment: fixed;
     margin-top: 40px;
     background: #e2e2e2;
+    transform-origin: top left;
 }
 
 .container{
@@ -344,3 +346,12 @@ body {
 #negrito{
     color: gold;
 }
+
+
+@media (max-width: 1300px) {
+  body {
+    font-size: 18px;
+    transform: scale(4);
+  }
+}
+

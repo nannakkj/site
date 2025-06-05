@@ -32,12 +32,12 @@ body{
     position: relative;
 }
 
-.fomularios{
-
-}
 .map{
     display:none;
     position: absolute;
+    right: 10px;
+    top: 220px;
+
 }
 .map_icon{
     height: 20px;
@@ -46,6 +46,11 @@ body{
     color: blue;
 }
 
-.map_icon:hover .map{
+.map.ativo{
     display: block;
+}
+
+#esq{
+    left: -450px;
+    position: absolute;
 }
