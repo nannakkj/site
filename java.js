@@ -1,85 +1,51 @@
-
-const circulo = document.getElementById('circulo1') 
-const quad = document.getElementById('quadradro1');
-const quad2 = document.getElementById('quadradro2');
-const quad3 = document.getElementById('quadradro3');
-
+const elementos = [
+  document.getElementById('circulo1'),
+  document.getElementById('quadradro1'),
+  document.getElementById('quadradro2'),
+  document.getElementById('quadradro3'),
+  document.getElementById('quadradro4')
+];
 
 const blur = document.querySelector('.blur');
-let timeoutId = null;
 
-circulo.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
+elementos.forEach(elemento => {
+  const idHoverido = 'hoverido-' + elemento.id;
+  const hoverido = document.getElementById(idHoverido);
+  let timeoutId = null;
 
-circulo.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
-});
+  elemento.addEventListener('mouseenter', () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      timeoutId = null;
+    }
 
-quad.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
+    blur.classList.add('ativo');
+    blur.style.zIndex = '3';
 
-quad.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
-});
+    // Esconde todos os hoveridos antes de mostrar o correto
+    document.querySelectorAll('.hoverido.ativo').forEach(h => {
+      h.classList.remove('ativo');
+    });
 
-quad2.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
+    // Mostra só o hoverido relacionado a esse elemento
+    if (hoverido) {
+      hoverido.classList.add('ativo');
+    }
 
-quad2.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
-});
+    elemento.style.zIndex = '4';
+  });
 
-quad3.addEventListener('mouseenter', () => {
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-    timeoutId = null;
-  }
-  
-  blur.classList.add('ativo');
-  blur.style.zIndex = '3';
-});
+  elemento.addEventListener('mouseleave', () => {
+    blur.classList.remove('ativo');
 
-quad3.addEventListener('mouseleave', () => {
-  blur.classList.remove('ativo');
-  
-  timeoutId = setTimeout(() => {
-    blur.style.zIndex = '0';
-    timeoutId = null;
-  }, 400); 
+    if (hoverido) {
+      hoverido.classList.remove('ativo');
+    }
+
+    timeoutId = setTimeout(() => {
+      blur.style.zIndex = '0';
+      elemento.style.zIndex = '2';
+      timeoutId = null;
+    }, 300);
+  });
 });

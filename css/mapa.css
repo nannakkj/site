@@ -74,7 +74,7 @@ body {
 
 #quadradro1{
     top: 42px;
-    left: 480px;
+    left: 760px;
     width: 280px;
     height: 240px;
     border: var(--linha) solid var(--parede);
@@ -83,7 +83,7 @@ body {
 }
 #quadradro2{
     top: 640px;
-    left: 480px;
+    left: 760px;
     width: 283px;
     height: 203px;
     border: var(--linha) solid var(--parede);
@@ -128,13 +128,31 @@ body {
     border-radius: 2vh;
 }
 
+#quadradro4{
+    top: 560px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+}
+
+#quadradro4_1{
+    top: 0px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
 #corredor1{
     top: 282px;
-    left: 600px;
+    left: 880px;
     width: 43px;
-    height: 360px;
+    height: 363px;
     position: absolute;
-    background-position: -2.5px 0px;
+    background-position: -2.5px 1px;
 }
 #corredor1_1{
     top: 0px;
@@ -195,12 +213,41 @@ body {
 #corredor2_4{
     top: 720px;
     left: 80px;
-    width: 403px;
+    width: 683px;
     height: 43px;
     position: absolute;
     z-index: 2;
     border: var(--linha) solid var(--parede);
 }
+
+#corredor3{
+    top: 480px;
+    left: 80px;
+    width: 803px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    border: var(--linha) solid var(--parede);
+}
+
+#corredor3_1{
+    left: 800px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+}
+
+#corredor4{
+    top: 520px;
+    left: 200px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    z-index: 2;
+    border: var(--linha) solid var(--parede);
+}
+
 
 
 .blur {
@@ -223,14 +270,17 @@ body {
 #circulo1:hover, 
 #quadradro1:hover, 
 #quadradro2:hover,
-#quadradro3:hover{
-    z-index: 4;
+#quadradro3:hover,
+#quadradro4:hover{
+    z-index: 0;
 }
 
 #corredor1_1::before, 
 #corredor2_1::before, 
 #corredor1_2::before, 
-#corredor1_3::before{
+#corredor1_3::before,
+#corredor3_1::before,
+#quadradro4_1::before{
     content: '';
     position: absolute;
     left: 0; top: 0;
@@ -243,6 +293,54 @@ body {
     z-index: 2;
 }
 
+.hoverido {
+  position: absolute;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(27, 26, 26, 0.925);
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  right: -170px;
+  top: 10px;
+  padding: 16px;
+}
 
-/* Hover e blabla */
+.hoverido.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
 
+.hoverido p{
+    color: #e2e2e2;
+    text-align: left;
+    font-family: "IM Fell English", serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+.hoverido h2{
+    color: #e2e2e2;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 6px;
+    font-family: "Cinzel", serif;
+}
+
+#hoverido-circulo1 {
+    right: -210px;
+    top: 50px;
+}
+
+#hoverido-quadradro4{
+    right: -355px;
+    top: 20px;
+    height: 280px;
+    width: 380px;
+    letter-spacing: 2px;
+}
+
+#negrito{
+    color: gold;
+}
