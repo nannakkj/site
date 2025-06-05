@@ -10,7 +10,7 @@
 }
 
 body {
-    background: rgb(2, 11, 5);
+    background: rgb(48, 15, 7);
     min-height: 100vh;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -46,13 +46,6 @@ body {
     position: relative;
 }
 
-#space3 { 
-    height: 1vw;
-    width: 100%;
-    position: relative;
-    background-color: rgb(2, 11, 5);
-    z-index: 11;
-}
 
 
 
@@ -61,7 +54,6 @@ body {
     height: 30vw;
     width: 1vw ;
     position: relative;
-    background-color: #64178d;
 }
 /* textos */
 
@@ -153,6 +145,7 @@ body {
     width: 100vw;
     object-fit: cover;
     z-index: -1;
+    
 }
 
 #wall{ 
@@ -160,51 +153,45 @@ body {
     z-index: -1;
     margin-left: -2vw;
     margin-right: -2vw; 
-    filter: brightness(.4);
+    top: -3.5vw;
+    position: relative;
+    margin-top: 4vw;
+    margin-bottom: -3.5vw;
 }
 
 #portao, #portao2 {
     width: 26vw;
     position: absolute;
-    bottom: .4vw;
+    bottom: 0vw;
     transform: translate(-50%);
     margin-left: -2vw;
     margin-right: -2vw; 
+    margin-bottom: 0; 
     height: auto;
     left: 50%;
     pointer-events: auto; /* permitir hover apenas nestas */
     cursor:pointer ;
-    filter: brightness(.8);
+
+    
 }
 #portao { 
     z-index: 4;
+    
 }
 
 #portao2 { 
-    z-index: -1;
+    z-index: -2;
     transition: bottom 1.5s ease-out;
+    width: 20vw;
+    
 }
 
 #portao-container:hover #portao2 {
     bottom: 25vw;
     cursor: grab;
-}
-
-#portao_fundo { 
-    width: 45vw;
-    height: 50vw;
-    background-color: #000000;
-    top: 155vw;
-    position: absolute;
-    z-index: 3;
-    left: 50%;
-    transform: translate(-50%);
-    margin-left: -2vw;
-    margin-right: -2vw; 
-    border-top-left-radius: 20vw;
-    border-top-right-radius: 20vw;
 
 }
+
 
 
 img { /* nao deixar selecionavel a imagem */
@@ -218,14 +205,14 @@ img { /* nao deixar selecionavel a imagem */
 #fundodun{
     height: 20vw;
     position: absolute;
-    bottom: .7vw;
+    bottom: 0vw;
     transform: translate(-50%);
     margin-left: -2vw;
     margin-right: -2vw; 
     left: 50%;
     pointer-events: auto; /* permitir hover apenas nestas */
     cursor:pointer ;
-    z-index: -2;
+    z-index: -4;
     filter: brightness(.25);
 }
 

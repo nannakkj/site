@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <link rel="stylesheet" href="./css/fale_comigo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <a href="./mapa.html"><div class="voltar"><ion-icon name="return-down-back-outline"></ion-icon></div></a>
     <section class="folha">
         <div class="contato_cont">
             <div class="title1">
@@ -18,36 +24,41 @@
                 <div class="contat">
                     <h2>Contato</h2>
                     <form>
-                        <div>
-                            <input placeholder="Escreva seu nome" type="text" required>
-                        </div>
+
                         <div>
                             <input placeholder="Escreva seu e-mail" type="email" required>
                         </div>
                         <div>
-                            <textarea placeholder="Escreva seu texto"></textarea>
+                            <textarea placeholder="Escreva seu texto" id="text"></textarea>
                         </div>
                         <div>
-                            <input type="submit" name="enviar" value="Enviar">
+                            <input type="submit" name="enviar" value="Enviar" >
                         </div>
                     </form>
                 </div>
                 <div class="map_icon"><ion-icon name="map-outline"></ion-icon>
                     <div class="map">
-                        <iframe
+                        <div id="dir">
+                        <iframe id="bordado"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.5865909749823!2d0.5428367501453438!3d51.00237800295254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11.0!3m3!1m2!1s0x47df17e53b1fc91f%3A0xa49a1915dff0aeb!2sBodiam%20Castle!5e1!3m2!1spt-BR!2sbr!4v1749090842983!5m2!1spt-BR!2sbr"
-                            width="430" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            width="430" height="350"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-
-                        <iframe id="esq"
+                        </div><div id="esq">
+                        <iframe  id="bordado"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1247.0279409526855!2d0.5409053!3d51.0025254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f14.0!3m3!1m2!1s0x47df17e53b1fc91f%3A0xa49a1915dff0aeb!2sBodiam%20Castle!5e0!3m2!1sen!2sbr!4v1717532054321!5m2!1sen!2sbr"
-                            width="430" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            width="430" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
+                        </div>
                     </div>
 
                 </div>
+
             </div>
+                        <div>
+                            <input placeholder="Assine" type="text" required id="nome">
+                        </div>
         </div>
+
     </section>
 
 
@@ -57,18 +68,28 @@
 <script>
     const map = document.querySelector('.map'); 
     const mapIcon = document.querySelector('.map_icon'); 
+    const esq = document.getElementById('esq');
+    const dir = document.getElementById('dir');
     let ativoo = 0;
 
-    mapIcon.addEventListener('click', function() {
-        if (ativoo === 0){
+    mapIcon.addEventListener('click', function () {
+        if (ativoo === 0) {
             map.classList.add('ativo');
+            esq.style.animation = 'jogaesq 0.8s ease-out forwards';
+            dir.style.animation = 'jogadir 0.8s ease-out forwards';
             ativoo = 1;
         } else {
-            map.classList.remove('ativo');
-            ativoo = 0;
+            esq.style.animation = 'saiEsq 0.6s ease-in forwards';
+            dir.style.animation = 'saiDir 0.6s ease-in forwards';
+
+            // Espera a animação terminar para esconder o container
+            setTimeout(() => {
+                map.classList.remove('ativo');
+                ativoo = 0;
+            }, 600); // mesmo tempo da animação
         }
     });
-</script>
+</script>   
 
 </body>
 

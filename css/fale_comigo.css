@@ -1,4 +1,7 @@
 
+:root{
+    --text1: #865331;
+}
 *{
     margin: 0;
     padding:0;
@@ -16,16 +19,21 @@ body{
     display: flex;
     max-width: 1200px;
     background-color: aliceblue;
-    height: 100vh;
+    height: auto;
     width: 900px;
     position: relative;
     padding: 4em;
-    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+    padding-bottom: 13em;
+    box-shadow: 2px 3px 20px black, 0 0 60px #572f08 inset;
     background: #E0C9A6;
     filter: url(#wavy2);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .contato_cont{
     margin: 0 auto;
+    width: 700px;
+    text-align: center;
 }
 
 .contato{
@@ -35,30 +43,173 @@ body{
 .title1{
     font-size: 35px;
     position: relative;
-    color: #8a613b;
+    color: var(--text1);
     font-style: italic;
-    left: -30px;
 }
 
 .map{
     display:none;
     position: absolute;
-    right: 10px;
-    top: 290px;
-
+    left: 850px;
+    top: 200px;
+    z-index: 99;
 }
 .map_icon{
     height: 20px;
     left: 0;
     font-size: 30px;
-    color: #b3865d;
+    color: var(--text1);
 }
 
 .map.ativo{
     display: block;
+    opacity: 1;
 }
 
 #esq{
-    left: -450px;
+    left: -1250px;
     position: absolute;
+    transform: rotateZ(-20deg);
+    background-color: #e6e6e6;
+    height: 550px;
+    width: 455px;
+    box-shadow: 10px 10px 15px 5px rgba(2, 18, 49, 0.356);
+    border: 1px solid black;
+
 }
+
+#esq iframe{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 13px;
+    position: relative;
+    display: flex;
+}
+
+
+#dir{
+    right: -400px;
+    position: absolute;
+    transform: rotateZ(20deg);
+    background-color: #e6e6e6;
+    height: 550px;
+    width: 455px;
+    box-shadow: -10px 10px 15px 5px rgba(2, 18, 49, 0.356);
+    border: 1px solid black;
+    
+}
+
+#dir iframe{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 13px;
+    position: relative;
+    display: flex;
+
+}
+
+#bordado{
+    height: 350px;
+    width: 430px;
+            border: 1px solid black;
+
+}
+
+
+
+#nome {
+    right: 90px;
+    position: absolute;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--text1);
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 80px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Cinzel", serif;
+    color: red;
+    font-size: 17px;
+}
+
+#nome:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid var(--text1);
+    outline: 0;
+}
+
+.voltar{
+    height: 60px;
+    width: 60px;
+    background-color: #E0C9A6;
+    box-shadow: .2px .3px 20px black, 0 0 60px #572f08 inset;
+    border-radius: 50%;
+    position: absolute;
+    left: 90px;
+    top: 60px;
+    color: #E0C9A6;
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes jogaesq{
+    0%{
+        transform: translateX(-1200px) rotate(-90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) rotate(20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes jogadir{
+    0%{
+        transform: translateX(1200px) rotate(90deg);
+        opacity: 1;
+
+    }
+    100% {
+        transform: translateX(0) rotate(-20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes saiEsq {
+    0% {
+        transform: translateX(0) rotate(20deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-1200px) rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes saiDir {
+    0% {
+        transform: translateX(0) rotate(-20deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(1200px) rotate(90deg);
+        opacity: 0;
+    }
+}
+
+.map.ativo #esq {
+    animation: jogaesq 0.8s ease-out forwards;
+}
+
+.map.ativo #dir {
+    animation: jogadir 0.8s ease-out forwards;
+}
+
