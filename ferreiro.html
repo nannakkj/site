@@ -1,212 +1,435 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferreiro</title>
+    <link rel="stylesheet" href="./css/ferreiro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+QLD+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferreiro</title>
-  <link rel="stylesheet" href="./css/ferreiro.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+QLD+Hand:wght@400..700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <section>
+      <div class="bg"><img src="./img/fundo_ferreiro.png" /></div>
+      <a href="./mapa.html">
+        <div class="voltar">
+          <ion-icon name="return-down-back-outline"></ion-icon>
+        </div>
+      </a>
 
-<body>
-  <section>
-    <div class="bg"><img src="./img/fundo_ferreiro.png"></div>
-    <a href="./mapa.html">
-      <div class="voltar"><ion-icon name="return-down-back-outline"></ion-icon></div>
-    </a>
-    <div class="prateleira" id="prateleira1">
-      <div class="carrosel">
-        <div class="carrosel_track">
-          <div class="carrosel_item espadas"><img src="./img/espada1.png" alt="Imagem 1"></div>
-          <div class="carrosel_item espadas"><img src="./img/espada2.png" alt="Imagem 2"></div>
-          <div class="carrosel_item espadas"><img src="./img/espada3.png" alt="Imagem 3"></div>
-          <div class="carrosel_item espadas"><img src="./img/espada4.png" alt="Imagem 4"></div>
+      <div class="prateleira" id="prateleira1">
+        <div class="carrosel">
+          <div class="carrosel_track">
+            <div class="carrosel_item espadas">
+              <img src="./img/espada1.png" alt="Imagem 1" />
+            </div>
+            <div class="carrosel_item espadas">
+              <img src="./img/espada2.png" alt="Imagem 2" />
+            </div>
+            <div class="carrosel_item espadas">
+              <img src="./img/espada3.png" alt="Imagem 3" />
+            </div>
+            <div class="carrosel_item espadas">
+              <img src="./img/espada4.png" alt="Imagem 4" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="precosw">
-      <div class="backsw"><ion-icon name="return-down-back-outline"></ion-icon></div>
-    </div>
-    <div class="precoar">
-      <div class="backar"><ion-icon name="return-down-back-outline"></ion-icon></div>
-    </div>
-    </div>
-    <div class="swordic">⚔</div>
-    <div class="armoric"><img src="./img/armor.png" alt=""></div>
-    <div class="prateleira" id="prateleira2">
 
-    </div>
+      <div class="precosw">
+        <div id="titulo_armas"></div>
+        <div id="descricao_armas"></div>
+        <div class="gold" id="preco_armas"></div>
+        <div class="backsw">
+          <ion-icon name="return-down-back-outline"></ion-icon>
+        </div>
+      </div>
 
-  </section>
+      <div class="precoar">
+        <div id="titulo_armaduras"></div>
+        <div id="descricao_armaduras"></div>
+        <div class="gold" id="preco_armaduras"></div>
+        <div class="backar">
+          <ion-icon name="return-down-back-outline"></ion-icon>
+        </div>
+      </div>
 
-  <script>
-    const carrosel = document.querySelector('.carrosel');
-    const track = document.querySelector('.carrosel_track');
-    let items = Array.from(document.querySelectorAll('.carrosel_item'));
+      <div class="swordic">⚔</div>
+      <div class="armoric"><img src="./img/armor.png" alt="" /></div>
 
-    const itemCount = items.length;
-    let itemWidth = carrosel.offsetWidth;
+      <div class="prateleira" id="prateleira2">
+        <div class="carrosel carrosel2">
+          <div class="carrosel_track carrosel_track2">
+            <div class="carrosel_item armaduras">
+              <img src="./img/armadura1.png" alt="Armadura 1" />
+            </div>
+            <div class="carrosel_item armaduras">
+              <img src="./img/armadura2.png" alt="Armadura 2" />
+            </div>
+            <div class="carrosel_item armaduras nuvem">
+              <img src="./img/armadura3.png" alt="Armadura 3" />
+            </div>
+            <div class="carrosel_item armaduras nuvem">
+              <img src="./img/armadura4.png" alt="Armadura 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    let isDragging = false;
-    let startX = 0;
-    let currentTranslate = 0;
-    let prevTranslate = 0;
-    let animationID = 0;
-    let currentIndex = 0;
+    <script>
+      const carrosel = document.querySelector(".carrosel");
+      const track = document.querySelector(".carrosel_track");
 
-    function setWidthAndPosition() {
-      itemWidth = carrosel.offsetWidth;
-      setPositionByIndex();
-    }
+      const espadas = [
+        {
+          titulo: "<h2>Espada de Aço <br>Rúnico</h2>",
+          Descricao:
+            "<p>Espada curta de lâmina reta e afiada, ideal para combates corpo a corpo. Cabo revestido em couro para melhor empunhadura e guarda em aço reforçado. Simples, resistente e confiável.</p>",
+          preco: "180",
+        },
+        {
+          titulo: "<h2>Espada do Guardião Dourado</h2>",
+          Descricao:
+            "<p>Espada robusta com guarda dourada ornamentada e lâmina larga de aço polido. O cabo em couro trançado garante firmeza, enquanto o pomo dourado equilibra o peso com elegância. Ideal para guerreiros de prestígio.</p>",
+          preco: "340",
+        },
+        {
+          titulo: "<h2>Espada de Cristal Arcano</h2>",
+          Descricao:
+            "<p>Lâmina azul mística forjada em cristal encantado, com guarda dourada incrustada por uma gema mágica. Leve, poderosa e ideal para guerreiros com afinidade mágica.</p>",
+          preco: "520",
+        },
+        {
+          titulo: "<h2> Espada Sombria de Amatista</h2>",
+          Descricao:
+            "<p>Forjada com energia arcana sombria, esta lâmina roxa de design agressivo brilha com poder. Empunhadura espiralada e guarda violeta com gema central tornam esta arma ideal para magos guerreiros e feiticeiros.</p>",
+          preco: "610",
+        },
+      ];
 
-    setWidthAndPosition();
+      const armaduras = [
+        {
+          titulo: "<h2>Elmo do Sentinela Antigo</h2>",
+          Descricao:
+            "<p>Um elmo fechado de aço escurecido com design robusto e linhas reforçadas. Possui fendas horizontais para visão estratégica e orifícios de respiração laterais. Inspirado nos guardiões das fortalezas perdidas, é ideal para cavaleiros e soldados de elite.</p>",
+          preco: "275",
+        },
+        {
+          titulo: "<h2>Elmo Alado de Aerion</h2>",
+          Descricao:
+            "<p>Elmo cerimonial com design aerodinâmico e ornamentações em forma de asas, simbolizando velocidade e bravura. A joia frontal emite um leve brilho sob a luz, e a estrutura reforçada oferece proteção sem sacrificar a leveza. Perfeito para campeões e mensageiros reais.</p>",
+          preco: "390",
+        },
+        {
+          titulo: "<h2>Elmo Flamejante de Azurion</h2>",
+          Descricao:
+            "<p>Este elmo mágico exibe uma chama etérea no topo, símbolo do pacto com os antigos espíritos do fogo. Seu corpo é adornado por arabescos místicos que brilham em combate. Ideal para paladinos elementais e conjuradores das chamas eternas.</p>",
+          preco: "480",
+        },
+        {
+          titulo: "<h2>Elmo do General de Ferro</h2>",
+          Descricao:
+            "<p>Este elmo robusto, com chifres curvos e uma crista ornamentada, foi usado por generais lendários nas guerras do norte. Sua presença inspira aliados e impõe respeito aos inimigos. Forjado para liderar na linha de frente.</p>",
+          preco: "520",
+        },
+      ];
 
-    items.forEach(item => {
-      item.addEventListener('dragstart', e => e.preventDefault());
-    });
-    carrosel.addEventListener('mousedown', startDrag);
-    carrosel.addEventListener('mouseup', endDrag);
-    carrosel.addEventListener('mouseleave', endDrag);
-    carrosel.addEventListener('mousemove', drag);
+      let items = Array.from(document.querySelectorAll(".carrosel_item"));
+      const itemCount = items.length;
+      let itemWidth = carrosel.offsetWidth;
+      let currentType = "espada";
+      let isDragging = false;
+      let startX = 0;
+      let currentTranslate = 0;
+      let prevTranslate = 0;
+      let animationID = 0;
+      let currentIndex = 0;
 
-    carrosel.addEventListener('touchstart', startDrag);
-    carrosel.addEventListener('touchend', endDrag);
-    carrosel.addEventListener('touchmove', drag);
-
-    track.style.transform = `translateX(${-itemWidth * currentIndex}px)`;
-    prevTranslate = -itemWidth * currentIndex;
-    currentTranslate = prevTranslate;
-
-    function startDrag(e) {
-      isDragging = true;
-      startX = getPositionX(e);
-      animationID = requestAnimationFrame(animation);
-      carrosel.classList.add('grabbing');
-    }
-
-    function endDrag() {
-      if (!isDragging) return;
-      isDragging = false;
-      cancelAnimationFrame(animationID);
-      carrosel.classList.remove('grabbing');
-
-      const movedBy = currentTranslate - prevTranslate;
-
-      if (movedBy < -itemWidth / 4 && currentIndex < items.length - 1) {
-        currentIndex++;
-      } else if (movedBy > itemWidth / 4 && currentIndex > 0) {
-        currentIndex--;
+      function setWidthAndPosition() {
+        itemWidth = carrosel.offsetWidth;
+        setPositionByIndex();
       }
 
-      setPositionByIndex();
-    }
-
-    function drag(e) {
-      if (!isDragging) return;
-      const currentPosition = getPositionX(e);
-      let nextTranslate = prevTranslate + currentPosition - startX;
-
-      const maxTranslate = 0;
-      const minTranslate = -itemWidth * (items.length - 1);
-
-      if (nextTranslate > maxTranslate) {
-        nextTranslate = maxTranslate;
-      } else if (nextTranslate < minTranslate) {
-        nextTranslate = minTranslate;
+      function atualizar_espadas(index) {
+        const item = espadas[index];
+        document.getElementById("titulo_armas").innerHTML = item.titulo;
+        document.getElementById("descricao_armas").innerHTML = item.Descricao;
+        document.getElementById(
+          "preco_armas"
+        ).textContent = `Preço: ${item.preco} moedas`;
       }
 
-      currentTranslate = nextTranslate;
-    }
+      function atualizar_armaduras(index) {
+        const item = armaduras[index];
+        document.getElementById("titulo_armaduras").innerHTML = item.titulo;
+        document.getElementById("descricao_armaduras").innerHTML =
+          item.Descricao;
+        document.getElementById(
+          "preco_armaduras"
+        ).textContent = `Preço: ${item.preco} moedas`;
+      }
 
-    function getPositionX(e) {
-      return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-    }
+      function startDrag(e) {
+        isDragging = true;
+        startX = getPositionX(e);
+        animationID = requestAnimationFrame(animation);
+        carrosel.classList.add("grabbing");
+      }
 
-    function animation() {
-      setSliderPosition();
-      if (isDragging) requestAnimationFrame(animation);
-    }
+      function endDrag() {
+        if (!isDragging) return;
+        isDragging = false;
+        cancelAnimationFrame(animationID);
+        carrosel.classList.remove("grabbing");
 
-    function setSliderPosition() {
-      track.style.transform = `translateX(${currentTranslate}px)`;
-    }
+        const movedBy = currentTranslate - prevTranslate;
 
-    function setPositionByIndex() {
-      track.style.transition = 'transform 0.3s ease';
-      currentTranslate = -currentIndex * itemWidth;
-      prevTranslate = currentTranslate;
-      setSliderPosition();
-    }
+        if (movedBy < -itemWidth / 4 && currentIndex < items.length - 1) {
+          currentIndex++;
+        } else if (movedBy > itemWidth / 4 && currentIndex > 0) {
+          currentIndex--;
+        }
 
-    window.addEventListener('resize', () => {
-      setWidthAndPosition();
-    });
+        setPositionByIndex();
+      }
 
-  </script>
-  <script>
-    const precosw = document.querySelector('.precosw');
-    const precoar = document.querySelector('.precoar');
-    const swordic = document.querySelector('.swordic');
-    const armoric = document.querySelector('.armoric');
-    const backsw = document.querySelector('.backsw');
-    const backar = document.querySelector('.backar');
+      function drag(e) {
+        if (!isDragging) return;
+        const currentPosition = getPositionX(e);
+        let nextTranslate = prevTranslate + currentPosition - startX;
 
+        const maxTranslate = 0;
+        const minTranslate = -itemWidth * (items.length - 1);
 
+        if (nextTranslate > maxTranslate) {
+          nextTranslate = maxTranslate;
+        } else if (nextTranslate < minTranslate) {
+          nextTranslate = minTranslate;
+        }
 
-    swordic.addEventListener('click', () => {
-      armoric.style.animation = 'minie 0.8s ease-out forwards';
-      swordic.style.animation = 'minie 0.8s ease-out forwards';
-      setTimeout(() => {
-      precosw.classList.add('ativo');
-      precosw.style.animation = 'armora 0.8s ease-out forwards';
-      armoric.classList.add('remove');
-      swordic.classList.add('remove');
-      }, 300);
-    });
-    backsw.addEventListener('click', () => {
-      precosw.style.animation = 'armore 0.8s ease-out forwards';
-      setTimeout(() => {
-        precosw.classList.remove('ativo');
-        armoric.classList.remove('remove');
-        swordic.classList.remove('remove');
-      armoric.style.animation = 'minia 0.8s ease-out forwards';
-      swordic.style.animation = 'minia 0.8s ease-out forwards';
-      }, 750);
-    });
+        currentTranslate = nextTranslate;
+      }
 
-    armoric.addEventListener('click', () => {
-      armoric.style.animation = 'minie 0.8s ease-out forwards';
-      swordic.style.animation = 'minie 0.8s ease-out forwards';
-      setTimeout(() => {
-        precoar.classList.add('ativo');
-        precoar.style.animation = 'armora 0.8s ease-out forwards';
-        armoric.classList.add('remove');
-        swordic.classList.add('remove');
-      }, 300);
+      function getPositionX(e) {
+        return e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+      }
 
-    });
-    backar.addEventListener('click', () => {
-      precoar.style.animation = 'armore 0.8s ease-out forwards';
+      function animation() {
+        setSliderPosition();
+        if (isDragging) requestAnimationFrame(animation);
+      }
 
-      setTimeout(() => {
-        precoar.classList.remove('ativo');
-        armoric.classList.remove('remove');
-        swordic.classList.remove('remove');
-            armoric.style.animation = 'minia 0.8s ease-out forwards';
-      swordic.style.animation = 'minia 0.8s ease-out forwards';
-      }, 750);
+      function setSliderPosition() {
+        track.style.transform = `translateX(${currentTranslate}px)`;
+      }
 
-    });
+      function setPositionByIndex() {
+        track.style.transition = "transform 0.3s ease";
+        currentTranslate = -currentIndex * itemWidth;
+        prevTranslate = currentTranslate;
+        setSliderPosition();
 
+        if (currentType === "espada") {
+          atualizar_espadas(currentIndex);
+        }
+      }
 
-  </script>
+      const carrosel2 = document.querySelector(".carrosel2");
+      const track2 = document.querySelector(".carrosel_track2");
+      let items2 = Array.from(
+        document.querySelectorAll(".carrosel_item.armaduras")
+      );
+      let itemCount2 = items2.length;
+      let itemWidth2 = carrosel2.offsetWidth;
+      let isDragging2 = false;
+      let startX2 = 0;
+      let currentTranslate2 = 0;
+      let prevTranslate2 = 0;
+      let animationID2 = 0;
+      let currentIndex2 = 0;
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+      function setWidthAndPosition2() {
+        itemWidth2 = carrosel2.offsetWidth;
+        setPositionByIndex2();
+      }
+
+      function startDrag2(e) {
+        isDragging2 = true;
+        startX2 = getPositionX(e);
+        animationID2 = requestAnimationFrame(animation2);
+        carrosel2.classList.add("grabbing");
+      }
+
+      function endDrag2() {
+        if (!isDragging2) return;
+        isDragging2 = false;
+        cancelAnimationFrame(animationID2);
+        carrosel2.classList.remove("grabbing");
+
+        const movedBy = currentTranslate2 - prevTranslate2;
+
+        if (movedBy < -itemWidth2 / 4 && currentIndex2 < items2.length - 1) {
+          currentIndex2++;
+        } else if (movedBy > itemWidth2 / 4 && currentIndex2 > 0) {
+          currentIndex2--;
+        }
+
+        setPositionByIndex2();
+      }
+
+      function drag2(e) {
+        if (!isDragging2) return;
+        const currentPosition = getPositionX(e);
+        let nextTranslate = prevTranslate2 + currentPosition - startX2;
+
+        const maxTranslate = 0;
+        const minTranslate = -itemWidth2 * (items2.length - 1);
+
+        if (nextTranslate > maxTranslate) {
+          nextTranslate = maxTranslate;
+        } else if (nextTranslate < minTranslate) {
+          nextTranslate = minTranslate;
+        }
+
+        currentTranslate2 = nextTranslate;
+      }
+
+      function animation2() {
+        setSliderPosition2();
+        if (isDragging2) requestAnimationFrame(animation2);
+      }
+
+      function setSliderPosition2() {
+        track2.style.transform = `translateX(${currentTranslate2}px)`;
+      }
+
+      function setPositionByIndex2() {
+        track2.style.transition = "transform 0.3s ease";
+        currentTranslate2 = -currentIndex2 * itemWidth2;
+        prevTranslate2 = currentTranslate2;
+        setSliderPosition2();
+
+        if (currentType === "armadura") {
+          atualizar_armaduras(currentIndex2);
+        }
+      }
+
+      // Eventos
+      items2.forEach((item) =>
+        item.addEventListener("dragstart", (e) => e.preventDefault())
+      );
+      carrosel2.addEventListener("mousedown", startDrag2);
+      carrosel2.addEventListener("mouseup", endDrag2);
+      carrosel2.addEventListener("mouseleave", endDrag2);
+      carrosel2.addEventListener("mousemove", drag2);
+      carrosel2.addEventListener("touchstart", startDrag2);
+      carrosel2.addEventListener("touchend", endDrag2);
+      carrosel2.addEventListener("touchmove", drag2);
+
+      window.addEventListener("resize", setWidthAndPosition2);
+      window.addEventListener("DOMContentLoaded", () => {
+        setWidthAndPosition2();
+      });
+
+      // Eventos de redimensionamento e inicialização
+      window.addEventListener("resize", () => {
+        setWidthAndPosition();
+      });
+
+      // Evento inicial
+      window.addEventListener("DOMContentLoaded", () => {
+        setWidthAndPosition();
+        atualizar_espadas(0);
+        atualizar_armaduras(0); // começa com espada 1
+      });
+
+      // Drag
+      items.forEach((item) =>
+        item.addEventListener("dragstart", (e) => e.preventDefault())
+      );
+      carrosel.addEventListener("mousedown", startDrag);
+      carrosel.addEventListener("mouseup", endDrag);
+      carrosel.addEventListener("mouseleave", endDrag);
+      carrosel.addEventListener("mousemove", drag);
+      carrosel.addEventListener("touchstart", startDrag);
+      carrosel.addEventListener("touchend", endDrag);
+      carrosel.addEventListener("touchmove", drag);
+
+      // Interface de seleção
+      const precosw = document.querySelector(".precosw");
+      const precoar = document.querySelector(".precoar");
+      const swordic = document.querySelector(".swordic");
+      const armoric = document.querySelector(".armoric");
+      const backsw = document.querySelector(".backsw");
+      const backar = document.querySelector(".backar");
+
+      swordic.addEventListener("click", () => {
+        armoric.style.animation = "minie 0.8s ease-out forwards";
+        swordic.style.animation = "minie 0.8s ease-out forwards";
+        setTimeout(() => {
+          precosw.classList.add("ativo");
+          precosw.style.animation = "armora 0.8s ease-out forwards";
+          armoric.classList.add("remove");
+          swordic.classList.add("remove");
+        }, 300);
+        currentType = "espada";
+        atualizar_espadas(currentIndex);
+      });
+
+      backsw.addEventListener("click", () => {
+        precosw.style.animation = "armore 0.8s ease-out forwards";
+        setTimeout(() => {
+          precosw.classList.remove("ativo");
+          armoric.classList.remove("remove");
+          swordic.classList.remove("remove");
+          armoric.style.animation = "minia 0.8s ease-out forwards";
+          swordic.style.animation = "minia 0.8s ease-out forwards";
+        }, 550);
+        atualizar_armaduras(0);
+      });
+
+      armoric.addEventListener("click", () => {
+        armoric.style.animation = "minie 0.8s ease-out forwards";
+        swordic.style.animation = "minie 0.8s ease-out forwards";
+        setTimeout(() => {
+          precoar.classList.add("ativo");
+          precoar.style.animation = "armora 0.8s ease-out forwards";
+          armoric.classList.add("remove");
+          swordic.classList.add("remove");
+        }, 300);
+        currentType = "armadura";
+        atualizar_armaduras(0); // opcional, mostrar armadura 1
+      });
+
+      backar.addEventListener("click", () => {
+        precoar.style.animation = "armore 0.8s ease-out forwards";
+        setTimeout(() => {
+          precoar.classList.remove("ativo");
+          armoric.classList.remove("remove");
+          swordic.classList.remove("remove");
+          armoric.style.animation = "minia 0.8s ease-out forwards";
+          swordic.style.animation = "minia 0.8s ease-out forwards";
+        }, 550);
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

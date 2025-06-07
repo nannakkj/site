@@ -1,5 +1,6 @@
 :root {
     --text1: #865331;
+    --text2: #E0C9A6;
 }
 
 * {
@@ -126,6 +127,14 @@ body {
     align-items: center; 
 }
 
+.carrosel_track2 {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    align-items: center; 
+    height: 300px;
+}
+
 .carrosel_item {
     min-width: 100%;
     pointer-events: none;
@@ -135,12 +144,34 @@ body {
     align-items: center;
     transform: rotate(20deg);
 }
+.armaduras{
+    transform: rotate(0deg);
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        transform: translateY(20px);
 
+}
 .carrosel_item img {
     width: 120px;
     height: auto;
     filter: drop-shadow(0 0 1rem rgb(255, 166, 0));
 }
+
+.armaduras img {
+    width: 160px;
+    height: auto;
+    filter: drop-shadow(0 0 1rem rgb(255, 166, 0));
+}
+
+.nuvem img {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 1rem rgb(255, 166, 0));
+}
+
 
 .grabbing {
     cursor: grabbing !important;
@@ -159,19 +190,60 @@ body {
 }
 
 
-.precosw{
+.precoar, .precosw{
     width: 600px;
     height: 400px;
     background-color: rgba(12, 12, 12, 0.904);
     position: fixed;
     border-radius: 20%;
     right: 15px;
-    top: 200px;
+    top: 250px;
     transform: skew(0deg);
     border: 5px double var(--text1);
     display: none;
     opacity: 1.0;
+    color: aliceblue;
+    text-align: center;
 }
+
+.precoar h2, .precosw h2{
+    color: var(--text1);
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.precoar p, .precosw p{
+    color: var(--text2);
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.precoar p, .precosw p{
+    color: var(--text2);
+    margin-left: 20px;
+    top: 150px;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.gold{
+    color: gold;
+    font-style: italic;
+    left: 180px;
+    top: 300px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+}
+
+
+
 
 .precoar{
     width: 600px;
@@ -242,18 +314,13 @@ body {
     height: 30px;
 }
 
-.backsw{
-    top: 110px;
+.backsw, .backar{
+    top: 120px;
 }
-
-.backar{
-    top: 110px;
-}
-
 @keyframes armora {
     0%
     {
-        transform: translateX(600px);
+        transform: translateX(200px);
         opacity: 0;
     }
 }
@@ -265,7 +332,7 @@ body {
         opacity: 1;
     }
     100%{
-        transform: translateX(600px);
+        transform: translateX(200px);
         opacity: 0;
     }
 }
@@ -273,7 +340,7 @@ body {
 @keyframes minia {
     0%
     {
-        transform: translateX(600px);
+        transform: translateX(200px);
         opacity: 0;
     }
 }
@@ -285,7 +352,7 @@ body {
         opacity: 1;
     }
     100%{
-        transform: translateX(600px);
+        transform: translateX(200px);
         opacity: 0;
     }
 }

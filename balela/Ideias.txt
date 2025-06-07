@@ -1,74 +1,16 @@
-🏠 Página Inicial
-
-
-Uma imagem de capa com uma loja mágica (estilo taberna, torre de mago, mercado de rua medieval). 
-
-Armas mágicas
-
-Armaduras encantadas
-
 Pergaminhos e grimórios
 
 Poções e consumíveis
 
 Relíquias raras
 
-Filtro por raridade (comuns, incomuns, raras, lendárias).
-
-Preço em "moedas de ouro" (com conversão se for em dinheiro real).
-
-📖 Catálogo Interativo / Grimório
-
-Cada item tem uma página com descrição temática, poderes, lore.
-
-Texto em estilo de RPG: “Forjada no coração de um vulcão adormecido, esta espada flamejante incendeia o ar ao seu redor...”
-
-📦 Carrinho / Comprar
-
-Carrinho mágico (uma bolsa extradimensional?).
-
-Checkout com um toque temático: "Invocar entrega", "Selo arcano de pagamento".
-
-🎲 Itens Aleatórios
-
 Gacha/loot box: você compra uma “Caixa Misteriosa” e ganha um item aleatório.
 
 “Bênção do destino” – rolagem de dado para decidir desconto ou brinde.
 
-🧙‍♂️ Sobre a Loja
-
 Lore da loja: “Fundada por um mago aposentado que cansou de aventuras...”
 
-Quem é o “vendedor”? Crie um personagem (ex: Mestre Thalim, gnomo artífice).
 
-📬 Contato / Suporte
-
-Nomeie como “Envie uma mensagem por corvo” ou “Use o Espelho Comunicador”.
-
-🌒 Tema Noturno / Modo Épico
-
-Design escuro, roxo, dourado, rúnico, com fontes estilo manuscrito medieval.
-
-🎨 Estilo Visual
-Fontes medievais (ex: Cinzel, IM Fell English).
-
-Ícones mágicos (poções, runas, pergaminhos).
-
-Fundo com pergaminhos, couro, madeira, pedras encantadas.
-
-Animações leves: brilhos nos itens, partículas mágicas.
-
-🛠️ Funcionalidades Futuras
-Sistema de conta e inventário do usuário.
-
-Loja física ou versão printável (para usar em mesa real).
-
-Se quiser, posso montar um esqueleto visual no Figma ou começar o HTML/CSS do site pra você. Quer seguir por esse caminho?
-
-🗺️ Mapa Interativo da Loja
-Um “mapa mágico” da loja onde você navega pelos setores (Ex: Arsenal do Dragão, Sala dos Grimórios, Câmara dos Segredos).
-
-Pode ser ilustrado como uma planta de dungeon ou castelo.
 
 🧾 Contrato Mágico / Termos de Uso
 Nomear como "Contrato de Sangue" ou "Pacto de Comércio Arcano".
@@ -143,57 +85,13 @@ Pode se chamar “Diário dos Viajantes” ou “Crônicas do Salão da Glória�
 
 Você pode selecionar as melhores e dar destaque na home.
 
-🧿 Sistema de Sorte/Ritual Diário
+
+
+
 O usuário pode realizar um “ritual de sorte” diário gratuito (roda mágica, leitura de runas).
 
 Ganha moedas, brindes ou pequenos descontos.
 
-🐉 Mascotes Mágicos
-Loja paralela com mascotes encantados que seguem o comprador (cosméticos para perfil ou inventário).
-
-Tipos: dragõezinhos, espectros, fadas, golems, etc.
-
-Alguns podem dar bônus como pequenos descontos ou mais XP.
-
-🌐 Localização Multiplanar
-Interface com “portais” que mudam o visual do site:
-
-“Planalto Celestial” – interface dourada e sagrada.
-
-“Abismo Sombrio” – vermelho e negro com névoa.
-
-“Bosque Élfico” – verde e marrom com folhas caindo.
-
-Cada plano poderia ter alguns itens exclusivos.
-
-📅 Calendário dos Eventos Místicos
-Um calendário com dias especiais: Lua Sangrenta, Festival das Runas, Eclipse dos Portais.
-
-Em cada evento, itens únicos, descontos ou mudanças visuais temporárias.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fazer um contrato de sangue que te permite entrar nas salas, so fazer uma segunda versao do mapa e do index.
