@@ -375,6 +375,8 @@ body {
     font-family: "IM Fell English", serif;
     font-size: 23px;
     font-style: italic;
+        letter-spacing: 2px;
+
 }
 
 .hoverido h2{
@@ -395,7 +397,6 @@ body {
     top: 20px;
     height: 280px;
     width: 380px;
-    letter-spacing: 2px;
 }
 
 #negrito{
@@ -416,6 +417,13 @@ body {
 
 #hoverido-circulo2{
     left: 80px;
-    height: 200px;
+    height: 220px;
     width: 400px;
+}
+
+#hoverido-circulo1{
+    height: 350px;
+    left: 250px;
+    width: 430px;
+    top: 80px;
 }

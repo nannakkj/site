@@ -23,12 +23,10 @@ elementos.forEach(elemento => {
     blur.classList.add('ativo');
     blur.style.zIndex = '3';
 
-    // Esconde todos os hoveridos antes de mostrar o correto
     document.querySelectorAll('.hoverido.ativo').forEach(h => {
       h.classList.remove('ativo');
     });
 
-    // Mostra só o hoverido relacionado a esse elemento
     if (hoverido) {
       hoverido.classList.add('ativo');
     }

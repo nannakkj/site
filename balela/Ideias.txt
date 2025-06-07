@@ -1,10 +1,7 @@
 🏠 Página Inicial
 
-Destaque para itens em destaque ou ofertas mágicas.
 
-🛒 Loja de Itens
-
-Filtros por categoria:
+Uma imagem de capa com uma loja mágica (estilo taberna, torre de mago, mercado de rua medieval). 
 
 Armas mágicas
 
@@ -63,10 +60,6 @@ Animações leves: brilhos nos itens, partículas mágicas.
 
 🛠️ Funcionalidades Futuras
 Sistema de conta e inventário do usuário.
-
-Criação de “personagem” do comprador.
-
-Integração com mesa virtual (ex: Foundry, Roll20).
 
 Loja física ou versão printável (para usar em mesa real).
 
@@ -179,8 +172,28 @@ Um calendário com dias especiais: Lua Sangrenta, Festival das Runas, Eclipse do
 Em cada evento, itens únicos, descontos ou mudanças visuais temporárias.
 
 
-Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito Feito 
 
-🏠 Página Inicial
 
-Uma imagem de capa com uma loja mágica (estilo taberna, torre de mago, mercado de rua medieval). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
