@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato room</title>
+    <link rel="stylesheet" href="./css/contrato.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contrato">
+        <div id="contrato"><img src="./img/contrato.png" alt=""></div> 
+    </div>
+    <div class="contrato_full">
+        <h2>ACESSO</h2><p>Por Ordem dos Selos Antigos e das Chamas Invertidas
+
+            <p>>&nbsp;&nbsp;Saibas, ó mortal ou criatura errante, que ao assinar este pacto, teus passos cruzarão o umbral da Loja dos Segredos Esquecidos, recinto onde a realidade se curva, e as leis do mundo são meras sugestões.<br><br></p>
+
+            <h3>Cláusula I — Juramento de Alma:</h3><br>
+            <p>&nbsp;&nbsp;Eu, abaixo assinante, cedo uma lasca de minha essência vital — não maior que um sussurro, não menor que uma lembrança — como penhor de boa conduta dentro dos domínios arcanos.<br><br></p>
+
+            <h3>Cláusula II — Do Conhecimento Proibido:</h3><br>
+            <p>&nbsp;&nbsp;Declaro estar ciente de que os artefatos aqui dispostos carregam maldições, bênçãos e enigmas que desafiam a razão. Não caberá à loja a responsabilidade por visões, transformações ou perda de humanidade.<br><br></p>
+
+            <h3>Cláusula III — Da Permanência:</h3><br>
+            <p>&nbsp;&nbsp;O tempo no interior da loja não se rege por relógios mortais. Uma hora pode ser um século. Um piscar de olhos, a eternidade. A saída será concedida somente aos que resistirem à tentação... ou pagarem o preço.<br><br></p>
+
+            <h3>Cláusula Final:</h3><br>
+            <p>&nbsp;&nbsp;Ao assinar com tua essência (sangue, sombra, ou suspiro), abres mão de qualquer proteção divina. Que as chamas do Inominável iluminem tua jornada entre os corredores da perdição.<br><br></p>
+<div id="embora"></div>
+</p>
+    </div>
+    <script>
+        const contrato = document.querySelector('.contrato_full');
+        const contrato2 = document.querySelector('.contrato');
+        const embora = document.querySelector('#embora');
+
+        contrato2.addEventListener('click', () => {
+            contrato.classList.add('active');
+        });
+
+        embora.addEventListener('click', () => {
+            window.location.href = './mapa.html';
+        });
+    </script>
+</body>
+</html>

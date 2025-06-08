@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="./css/mapa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+QLD+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="lanterna"></div>
+    <div class="mouse"> <img src="./img/tocha2.png" alt="" height="64"></div>
+
+    <div class="blur"></div>
+
+    <div class="container" id="circulo1">
+        <div class="hoverido" id="hoverido-circulo1">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+
+        </div>
+        <div class="container shadowless" id="corredor2_1"></div>
+    </div>
+    <div class="container" id="quadradro1">
+        <div class="hoverido" id="hoverido-quadradro1">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+        </div>
+    </div>
+    <div class="container" id="quadradro2">
+        <div class="container shadowless" id="corredor1_1"></div>
+        <div class="container shadowless" id="corredor1_2"></div>
+        <div class="container shadowless" id="corredor1_3"></div>
+        <div class="container shadowless" id="quadradro2_1"></div>
+        <div class="container" id="quadradro2_2">
+            <div class="hoverido" id="hoverido-quadradro2">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container corredortopbtless" id="corredor1"></div>
+    <div class="container " id="corredor2_2">
+    </div>
+    <div class="container corredortopless" id="corredor2_3">
+
+    </div>
+    <div class="container corredorsideless" id="corredor2_4">
+
+    </div>
+
+    <div class="container corredorsideless" id="corredor5">
+    </div>
+
+    <div class="container corredorsideless " id="corredor3">
+        <div class="container shadowless " id="corredor3_1"></div>
+    </div>
+
+    <div class="container corredortopless " id="corredor4">
+
+    </div>
+
+
+
+    <div class="container" id="quadradro3">
+        <div class="hoverido" id="hoverido-quadradro3">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+        </div>
+    </div>
+    <div class="container" id="quadradro4">
+        <div class="container shadowless " id="quadradro4_1"></div>
+
+        <div class="hoverido" id="hoverido-quadradro4">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+        </div>
+
+    </div>
+
+    <div class="container corredortopbtless" id="corredor10">
+
+    </div>
+
+
+   <a href="./contrato.html"> <div class="container" id="quadradro5">
+
+
+        <div class="hoverido" id="hoverido-quadradro5">
+<h2 id="proibido" >Sala do Pacto</h2>
+<p>&nbsp;&nbsp;Adentras agora o véu do desconhecido, onde promessas são seladas e escolhas ganham peso eterno.  
+Neste recinto oculto, um contrato jaz à espera — não de tinta e papel, mas de vontade e convicção.  
+
+Aceitar é mais que assinar; é conceder à sorte e ao aço a permissão para entrar em tua vida.  
+
+<span id="negrito"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Somente os audazes selam o pacto...e compram seu destino.</span></span></p>
+
+
+        </div>
+
+    </div></a>
+
+    <div class="container" id="circulo2">
+        <div class="hoverido" id="hoverido-circulo2">
+            <h2 id="proibido">Proibido <br>
+                Proibido <br>
+                Proibido <br>
+                Proibido <br></h2>
+        </div>
+        <div class="container shadowless" id="corredor_seinao"></div>
+    </div>
+    <div class="container corredortopless" id="corredor_seinao2"></div>
+
+
+    <div class="container shadowless " id="corredor10_1"></div>
+
+    <script src="./java.js"></script>
+    <script>
+        const lanterna = document.querySelector('.lanterna');
+        const mouse = document.querySelector('.mouse');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX + 'px';
+            const y = e.clientY + 'px';
+            lanterna.style.setProperty('--x', x);
+            lanterna.style.setProperty('--y', y);
+        });
+
+        const cursor = document.querySelector(".mouse");
+
+        document.addEventListener('mousemove', (e) => {
+            const offsetX = e.clientX + 16 + 'px'; // 32 / 2
+            const offsetY = e.clientY + 20 + 'px';
+            lanterna.style.setProperty('--x', offsetX);
+            lanterna.style.setProperty('--y', offsetY);
+
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+
+    </script>
+</body>
+
+</html>

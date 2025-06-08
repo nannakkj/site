@@ -437,15 +437,15 @@ body {
 }
 
 
-@media (max-width: 1300px) {
-  body {
-    font-size: 18px;
-    transform: scale(4);
-  }
-}
 
 #hoverido-quadradro3{
     right: 130px;
+}
+
+#hoverido-quadradro5{
+    left: 100px;
+    height: 330px;
+    width: 550px;
 }
 
 #hoverido-circulo2{
@@ -478,4 +478,7 @@ body {
     z-index: 9999;
     position: fixed;
     transform: rotate(-20deg);
+    }
+    #proibido{
+        color: red;
     }

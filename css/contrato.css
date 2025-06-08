@@ -1,0 +1,137 @@
+:root{
+    --text1: #865331;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.contrato{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#contrato img{
+    height: 150px;
+      animation: flutuar 1s infinite ease-in-out;
+    image-rendering: pixelated;
+}
+
+#contrato{
+        transition: transform 0.5s ease-in-out;
+
+}
+
+#contrato:after {
+        margin-top: -10px;
+  animation: background 1s infinite ease-in-out;
+
+  display:block;
+  content:"";
+  position:absolute;
+  width:160px;height:30px;
+  border-radius:5px;
+  transform: perspective(10px) translateZ(-2.5px) rotateX(5deg);
+  background:#666;
+  box-shadow:0 0 10px 10px #666;
+  z-index:-1;
+  border-radius: 50%;
+opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes taman {
+  0% { transform: scale(1) }
+  50% { transform: scale(.95); }
+    100% { transform: scale(1)  }
+}
+
+#contrato:hover{
+    transform: scale(2);
+}
+
+#contrato:hover::after {
+    opacity: 0;
+}
+
+.contrato_full.active{
+    display: block;
+}
+
+.contrato_full{
+    display: none;
+    position: absolute;
+    height: 850px;
+    width: 40vw;
+    box-shadow: 2px 3px 20px black, 0 0 60px #572f08 inset;
+    background: #E0C9A6;
+    filter: url(#wavy2);
+    margin: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contrato_full h2{
+    margin-bottom: 20px;
+    align-self: center;
+    position: relative;
+    left: 37%;
+        font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+    color: var(--text1);
+}
+
+.contrato_full h3{
+    align-self: center;
+    position: relative;
+        font-family: "Cinzel", serif;
+    font-size: 1.5rem;
+    color: var(--text1);
+}
+
+.contrato_full p{
+    margin-bottom: 20px;
+    align-self: center;
+    position: relative;
+    font-family: "Cinzel", serif;
+    color: #271102;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;        
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;    
+  border-radius: 20px;       
+  border: 3px solid transparent;  
+}
+
+#embora{
+    width: 100px;
+    height: 50px;
+    background-color: aliceblue;
+}
