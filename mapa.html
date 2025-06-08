@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="lanterna"></div>
+    <div class="mouse"> <img src="./img/tocha2.png" alt="" height="64"></div>
+
     <div class="blur"></div>
 
 <a href="./ferreiro.html"><div class="container" id="circulo1">
@@ -64,6 +67,7 @@
 </div>
 
 
+
 <div class="container" id="quadradro3">
     <div class="hoverido" id="hoverido-quadradro3">
         <h2>teste</h2>
@@ -82,6 +86,21 @@
 </div>
 </a>
 
+<div class="container corredortopbtless" id="corredor10">
+    
+</div>
+
+
+<a href="./fale_conosco.html">
+<div class="container" id="quadradro5">
+    
+
+    <div class="hoverido" id="hoverido-quadradro5">
+    </div>
+    
+</div>
+</a>
+
 <a href="./index.html">
 <div class="container" id="circulo2">
     <div class="hoverido" id="hoverido-circulo2">
@@ -92,6 +111,35 @@
 </div>
 </a>
 <div class="container corredortopless" id="corredor_seinao2"></div>
+
+
+<div class="container shadowless " id="corredor10_1"></div>
+
 <script src="./java.js"></script>
+  <script>
+    const lanterna = document.querySelector('.lanterna');
+    const mouse = document.querySelector('.mouse');
+
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX + 'px';
+      const y = e.clientY + 'px';
+      lanterna.style.setProperty('--x', x);
+      lanterna.style.setProperty('--y', y);
+    });
+
+const cursor = document.querySelector(".mouse");
+
+document.addEventListener('mousemove', (e) => {
+  const offsetX = e.clientX + 16 + 'px'; // 32 / 2
+  const offsetY = e.clientY + 20 + 'px';
+  lanterna.style.setProperty('--x', offsetX);
+  lanterna.style.setProperty('--y', offsetY);
+
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+});
+
+
+  </script>
 </body>
 </html>

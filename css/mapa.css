@@ -1,6 +1,6 @@
 :root {
-    --branco: rgb(225, 215, 192);
-    --parede: rgb(144, 57, 57);
+    --branco: rgb(189, 139, 22);
+    --parede: rgb(44, 22, 8);
     --teste: rgb(223, 81, 30);
     --sombra: rgba(6, 42, 115, 0.369);
     --sombra2: rgba(6, 42, 115, 0.233);
@@ -13,6 +13,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 body {
@@ -21,16 +22,16 @@ body {
     padding:0;
     box-sizing: border-box;
     min-height: 100vh;
-    margin-left: 40px;
-    margin-right: 40px;
     background-attachment: fixed;
-    margin-top: 40px;
-    background: #e2e2e2;
     transform-origin: top left;
+    background-color: rgb(31, 31, 31);
+    
 }
 
 .container{
-    background: #e2e2e2;
+        box-shadow: 2px 3px 20px black, 0 0 60px #572f08 inset;
+    background: #9b9088;
+    filter: url(#wavy2);
     background-image:  
     linear-gradient(0deg, var(--parede) var(--linha), transparent var(--linha)),
     linear-gradient(90deg, var(--parede) var(--linha), transparent var(--linha));
@@ -152,6 +153,16 @@ body {
     border-radius: 2vh;
 }
 
+#quadradro5{
+    top: 283px;
+    left: 480px;
+    width: 120px;
+    height: 120px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+    border-radius: 2vh;
+}
+
 #quadradro4_1{
     top: 0px;
     left: 40px;
@@ -184,6 +195,7 @@ body {
     height: 40px;
     position: absolute;
     background-position: -2.5px 0px;
+    z-index: 2;
 }
 #corredor1_3{
     top: 80px;
@@ -212,6 +224,25 @@ body {
     z-index: 2;
     border: none;
     background-color: '';
+}
+
+#corredor10{
+    top: 400px;
+    left: 520px;
+    width: 43px;
+    height: 83px;
+    border: var(--linha) solid var(--parede);
+    position: absolute;
+}
+
+#corredor10_1{
+    top: 480px;
+    left: 520px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    border: var(--linha) solid var(--parede);
+    z-index: 2;
 }
 #corredor_seinao{
     top: 0px;
@@ -317,7 +348,7 @@ body {
 }
 .blur.ativo {
     backdrop-filter: blur(5px);
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(0, 0, 0, 0.685);
     z-index: 3;
 }
 #circulo2:hover, 
@@ -325,7 +356,8 @@ body {
 #quadradro1:hover, 
 #quadradro2:hover,
 #quadradro3:hover,
-#quadradro4:hover
+#quadradro4:hover,
+#quadradro5:hover
 #circulo1:hover{
     z-index: 0;
 }
@@ -337,6 +369,7 @@ body {
 #corredor3_2::before,
 #corredor3_1::before,
 #quadradro4_1::before,
+#corredor10_1::before,
 #corredor_seinao::before{
     content: '';
     position: absolute;
@@ -427,3 +460,22 @@ body {
     width: 430px;
     top: 80px;
 }
+
+    .lanterna {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(221, 162, 73, 0.2) 100px, rgba(0, 0, 0, 0.904) 200px);
+      transition: background 0.05s;
+      z-index: 99;
+    }
+
+    .mouse{
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    z-index: 9999;
+    position: fixed;
+    transform: rotate(-20deg);
+    }

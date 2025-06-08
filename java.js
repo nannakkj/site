@@ -4,7 +4,8 @@ const elementos = [
   document.getElementById('quadradro1'),
   document.getElementById('quadradro2'),
   document.getElementById('quadradro3'),
-  document.getElementById('quadradro4')
+  document.getElementById('quadradro4'),
+  document.getElementById('quadradro5')
 ];
 
 const blur = document.querySelector('.blur');
