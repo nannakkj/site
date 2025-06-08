@@ -11,87 +11,10 @@ Gacha/loot box: você compra uma “Caixa Misteriosa” e ganha um item aleatór
 Lore da loja: “Fundada por um mago aposentado que cansou de aventuras...”
 
 
-
-🧾 Contrato Mágico / Termos de Uso
-Nomear como "Contrato de Sangue" ou "Pacto de Comércio Arcano".
-
-Ao aceitar, um selo se forma animadamente como se um pacto tivesse sido firmado.
-
-🎖️ Sistema de Conquistas
-Ganha títulos conforme compra, como:
-
-“Aprendiz do Consumo” – 1ª compra.
-
-“Caçador de Relíquias” – 5 itens raros.
-
-“Mão do Ouro” – 10.000 moedas gastas.
-
-Ícones estilizados para cada conquista.
-
-🧾 Lista de Desejos
-Chamado de “Grimório dos Desejos” ou “Lista de Invocações Futuras”.
-
-⏳ Itens Temporários / Raros
-Vitrine chamada Mercado Efêmero com itens que somem após um tempo (estilo feira mágica).
-
-🔁 Troca de Itens
-Uma área para os usuários “trocarem artefatos” (pode ser via fórum ou sistema interno).
-
-Chamada de “Mesa de Negociação dos Mercadores”.
-
-🧙‍♀️ Atendimento Interativo
-Um pequeno NPC chatbot que responde perguntas com fala temática.
-
-Exemplo: “- O que deseja, jovem conjurador?” ou “- Esse elmo foi usado por três reis amaldiçoados... quer mesmo?”
-
-🕯️ Modo Narrador (Acessibilidade)
-Um modo com voz narrada descrevendo os itens com entonação épica.
-
-Útil para acessibilidade e ambientação.
-
-🎭 Eventos e Missões Especiais
-Eventos como “Noite dos Espíritos”, onde apenas itens necromânticos aparecem.
-
-Missões do tipo: “Ajude Mestre Thalim a recuperar o Grimório Perdido e receba um item exclusivo”.
-
-🏛️ Guilda dos Compradores
-Sistema de comunidade com níveis: ao fazer compras ou participar de eventos, o usuário sobe de rank (Aprendiz → Aventureiro → Arcanista → Mestre Arcano).
-
-Benefícios: cupons mágicos, acesso a salas secretas da loja, pré-venda de itens raros.
-
-🧬 Encantamento Personalizado
-O usuário pode personalizar alguns itens, escolhendo o nome, aparência ou efeito visual (Ex: cor da aura, tipo de runas).
-
-Ex: “Espada do Vazio” → “Espada do Vazio de Tharion, Ceifador das Sombras”.
-
-🕵️‍♂️ Mercador das Sombras
-Um vendedor misterioso que aparece em horários aleatórios com itens únicos, malditos ou proibidos.
-
-Pode ter frases como: “Nem todos os artefatos devem ser tocados...”
-
-📦 Pacotes Temáticos
 Crie kits de aventureiro:
 
 “Pacote do Guerreiro” – espada, poção de força, armadura leve.
 
 “Pacote do Necromante” – grimório das trevas, poção de mana, anel de ossos.
 
-Vende mais de uma coisa de uma vez e ajuda quem está começando.
 
-📜 Crônicas de Clientes
-Usuários podem enviar histórias sobre como “usaram” os itens no RPG ou nas aventuras deles.
-
-Pode se chamar “Diário dos Viajantes” ou “Crônicas do Salão da Glória”.
-
-Você pode selecionar as melhores e dar destaque na home.
-
-
-
-
-O usuário pode realizar um “ritual de sorte” diário gratuito (roda mágica, leitura de runas).
-
-Ganha moedas, brindes ou pequenos descontos.
-
-
-
-fazer um contrato de sangue que te permite entrar nas salas, so fazer uma segunda versao do mapa e do index.

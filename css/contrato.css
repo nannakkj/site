@@ -13,6 +13,7 @@ body{
     justify-content: center;
     background: #000000;
     overflow-x: hidden;
+    height: 1200px;
 }
 
 .contrato{
@@ -80,7 +81,7 @@ opacity: 1;
 .contrato_full{
     display: none;
     position: absolute;
-    height: 850px;
+    height: 1150px;
     width: 40vw;
     box-shadow: 2px 3px 20px black, 0 0 60px #572f08 inset;
     background: #E0C9A6;
@@ -133,5 +134,63 @@ opacity: 1;
 #embora{
     width: 100px;
     height: 50px;
-    background-color: aliceblue;
+    right: 60px;
+    position: absolute;
+    top: 1050px;
+    border-bottom: var(--text1) 2px solid;
+}
+
+#digital{
+    width: 100px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    display: none;
+}
+
+.hand{
+    width: 200px;
+    position: absolute;
+    left: 940px;
+    position: absolute;
+    display: none;
+    top: 1020px;
+    z-index: 1000;
+}
+
+.hand.active{
+    display: block;
+    animation: hand 2s ease-in-out;
+    user-select: none;
+}
+
+.hand {
+    position: absolute;
+    width: 300px;
+    left: 946px;
+    top: 1030px;
+    display: none;
+    z-index: 1000;
+}
+
+.hand.active {
+    display: block;
+    animation: hand 2s ease-in-out;
+}
+.digital{
+    width: 100px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    opacity: 0;
+    }
+.digital.active {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes hand {
+    0%   { transform: translateY(300px); }
+    50%  { transform: translateY(0px); }
+    100% { transform: translateY(300px); }
 }
