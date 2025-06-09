@@ -25,7 +25,7 @@ body {
     background-attachment: fixed;
     transform-origin: top left;
     background-color: rgb(31, 31, 31);
-    
+    overflow: hidden;
 }
 
 .container{
@@ -466,7 +466,7 @@ body {
       width: 100vw;
       height: 100vh;
       pointer-events: none;
-      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(221, 162, 73, 0.2) 100px, rgba(0, 0, 0, 0.904) 200px);
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(237, 155, 33, 0.269) 100px, rgba(0, 0, 0, 0.819) 200px);
       transition: background 0.05s;
       z-index: 99;
     }
@@ -478,7 +478,18 @@ body {
     z-index: 9999;
     position: fixed;
     transform: rotate(-20deg);
+    
     }
+
+    .mouseMine{
+        width: 32px;
+        height: 32px;
+        pointer-events: none;
+        z-index: 9999;
+        position: fixed;
+        transform: rotate(-20deg);
+        
+        }
     #proibido{
         color: red;
     }
